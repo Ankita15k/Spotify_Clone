@@ -323,3 +323,12 @@ a {
     margin-top: -3px;
     box-shadow: -100.5rem 0 0 100rem #1bd760;
 }
+
+@media (max-width: 1000px) {
+    .hideBar {
+        display: none;
+    }
+    .postHide {
+        width: 100%;
+    }
+}
