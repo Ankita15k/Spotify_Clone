@@ -17,7 +17,12 @@ body {
     width: 340px;
     border-radius: 1rem; /* 1rem = 16px */
     margin-right: 0.5rem;
+}
 
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 11rem;
+    }
 }
 
 .main-content {
@@ -200,18 +205,8 @@ a {
     opacity: 0.8;
 }
 
-.footer {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.line {
-    width: 90%;
-    height: 50%;
-    border-top: 1px solid white;
-    opacity: 0.4;
+.artist-img {
+    border-radius: 5rem;
 }
 
 .music-player {
@@ -273,6 +268,25 @@ a {
     opacity: 0.7;
 }
 
+@media (max-width: 1000px) {
+    .hideBar {
+        display: none;
+    }
+    .postHide {
+        width: 100%;
+    }
+}
+
+/* .controls-sound-bar::-webkit-slider-runnable-track {
+    background-color: #121212;
+    border-radius: 80%;
+    height: 0.5rem;
+} */
+
+/* .controls-sound-bar::-webkit-slider-thumb {
+    margin-top: -2px;
+} */
+
 .controls-icon:hover {
     opacity: 1;
 }
@@ -312,6 +326,12 @@ a {
     margin-right: 1rem;
     overflow: hidden;
 }
+/* For Styling of range progress bar we can go to website -> quirksmode.org /sliding & scripting */
+/* .progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+} */
 
 .progress-bar::-webkit-slider-thumb {
     appearance: none;
@@ -324,11 +344,28 @@ a {
     box-shadow: -100.5rem 0 0 100rem #1bd760;
 }
 
-@media (max-width: 1000px) {
-    .hideBar {
-        display: none;
-    }
-    .postHide {
-        width: 100%;
-    }
+.footer {
+    height: 300px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.foot-panel {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot-panel p {
+    font-weight: 200;
+    font-size: 1rem;
+    opacity: 0.6;
+    line-height: 1rem;
 }
